@@ -1,0 +1,5 @@
+This is a test file.
+
+        CREATE TABLE IF NOT EXISTS test (id INTEGER PRIMARY KEY, name TEXT);
+        INSERT INTO test (name) VALUES ('Alice');
+        

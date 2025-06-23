@@ -1,0 +1,13 @@
+from typing import Protocol, runtime_checkable
+
+@runtime_checkable
+class Resource(Protocol):
+    def connect(self) -> None:
+        ...
+    def close(self) -> None:
+        ...
+    def read(self, query: str) -> str:
+        ...
+    def write(self, data: str) -> None:
+        ...
+
